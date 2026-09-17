@@ -1,0 +1,758 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>AWS Student Community Day — AWS Cloud Club, IGDTUW</title>
+    <meta
+      name="description"
+      content="AWS Student Community Day by AWS Cloud Club, IGDTUW — a free one-day student conference on cloud at IGDTUW. 3 February 2024. Register free."
+    />
+    <link rel="shortcut icon" href="assets/logo/Frame 17.png" type="image/png" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600&family=Poppins:wght@600&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <a class="skip-link" href="#main">Skip to main content</a>
+
+    <header class="site-header">
+      <nav class="nav container" aria-label="Primary">
+        <a class="nav__brand" href="#top">
+          <svg class="nav__aws-logo" viewBox="0 0 75 45" width="48" height="28" fill="none" aria-hidden="true">
+            <path d="M37.5 12.8c-7.3 0-11.8 3.5-13.8 8.6 2.7-1.3 5.4-1 7.2.5 1.7 1.4 2.8 3.8 4.2 6.8 2 4.3 4.8 9.3 12.4 9.3 7.3 0 11.8-3.5 13.8-8.6-2.7 1.3-5.4 1-7.2-.5-1.7-1.4-2.8-3.8-4.2-6.8-2-4.3-4.8-9.3-12.4-9.3z" fill="#FF9900"/>
+            <path d="M12.4 34.2C21.6 40.5 34.2 42 46.5 39c2.3-.6 4.6-1.4 6.8-2.4 1.2-.6 2.3-1.2 3.4-1.9 1-.7 1.2-1.5.3-2.3-.7-.6-1.5-.4-2.4.1-3.2 1.9-6.9 3.1-10.7 3.8-10.5 1.9-21.5.3-29.3-4.8-.9-.6-1.8-1.2-2.7-1.8-.7-.5-1.5-.3-1.9.4-.4.7-.2 1.5.4 2.1z" fill="#FF9900"/>
+          </svg>
+          <img
+            class="nav__brand-logo"
+            src="assets/logo/Frame 17.png"
+            alt="AWS Cloud Club Logo"
+            width="34"
+            height="34"
+          />
+          <span class="nav__brand-name">
+            AWS Cloud Club <span class="nav__brand-sub">· IGDTUW</span>
+          </span>
+        </a>
+
+        <ul class="nav__links" id="nav-links">
+          <li><a class="nav__link" href="#overview">Overview</a></li>
+          <li><a class="nav__link" href="#schedule">Schedule</a></li>
+          <li><a class="nav__link" href="#speakers">Speakers</a></li>
+          <li><a class="nav__link" href="#venue">Venue</a></li>
+        </ul>
+
+        <div class="nav__actions">
+          <a class="nav__register-mobile" href="#register">Register</a>
+          <a class="btn btn--accent btn--sm nav__register btn--pill" href="#register">Register</a>
+          <button
+            class="nav__toggle"
+            type="button"
+            aria-expanded="false"
+            aria-controls="nav-links"
+            aria-label="Toggle menu"
+          >
+            <svg class="ico" viewBox="0 0 24 24" aria-hidden="true" focusable="false">
+              <path d="M3 6h18M3 12h18M3 18h12" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" />
+            </svg>
+          </button>
+        </div>
+      </nav>
+    </header>
+
+    <main id="main">
+      <!-- 1 · HERO -->
+      <section class="hero" id="top" aria-labelledby="hero-title">
+        <div class="hero__moving-bg" aria-hidden="true"></div>
+        <div class="hero__bg-glow" aria-hidden="true"></div>
+        <div class="hero__particles" aria-hidden="true">
+          <span class="particle particle--1"></span>
+          <span class="particle particle--2"></span>
+          <span class="particle particle--3"></span>
+          <span class="particle particle--4"></span>
+          <span class="particle particle--5"></span>
+          <span class="particle particle--6"></span>
+        </div>
+
+        <!-- Top Header Dual Corner Logos -->
+        <div class="hero__header-logo hero__header-logo--left" title="AWS Cloud Clubs">
+          <img src="assets/logo/Frame 17.png" alt="AWS Cloud Clubs Logo" width="60" height="60">
+        </div>
+        <div class="hero__header-logo hero__header-logo--right" title="IGDTUW">
+          <img src="assets/logo/ig_logo.jpg" alt="IGDTUW University Logo" width="60" height="60">
+        </div>
+
+        <!-- Floating 3D Cubes & Orbits -->
+        <div class="hero__3d-decor" aria-hidden="true">
+          <div class="cube cube--1"></div>
+          <div class="cube cube--2"></div>
+          <div class="cube cube--3"></div>
+          <div class="hero__script-text">
+            <span>Learn</span>
+            <span>Build</span>
+            <span>Grow</span>
+          </div>
+        </div>
+
+        <!-- Geometric Triangle Poly Shards (Left & Right) -->
+        <div class="hero__shards hero__shards--left" aria-hidden="true">
+          <div class="shard shard--1"></div>
+          <div class="shard shard--2"></div>
+          <div class="shard shard--3"></div>
+          <div class="shard shard--4"></div>
+        </div>
+        <div class="hero__shards hero__shards--right" aria-hidden="true">
+          <div class="shard shard--1"></div>
+          <div class="shard shard--2"></div>
+          <div class="shard shard--3"></div>
+          <div class="shard shard--4"></div>
+        </div>
+
+        <div class="container hero__inner">
+          <div class="hero__content">
+            <p class="eyebrow eyebrow--orange anim-entry anim-d1">
+              <span class="eyebrow__dot eyebrow__dot--orange" aria-hidden="true"></span>
+              AWS STUDENT COMMUNITY DAY
+            </p>
+            <h1 id="hero-title" class="hero__title anim-entry anim-d2">
+              AWS Student <span class="text-orange">Community Day</span>
+            </h1>
+            <p class="hero__lede anim-entry anim-d3">
+              A free one-day student conference on cloud computing at
+              IGDTUW — 9 talks on cloud, AI, security and careers, with
+              hands-on activities.
+            </p>
+
+            <div class="hero__actions anim-entry anim-d4">
+              <a class="btn btn--orange-pill btn--lg" href="#register">
+                Register free
+                <svg class="ico ico--sm" viewBox="0 0 24 24" aria-hidden="true" focusable="false"><path d="M5 12h14M12 5l7 7-7 7" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>
+              </a>
+              <a class="btn btn--schedule-glass btn--lg" href="#schedule">
+                View schedule
+                <svg class="ico ico--sm" viewBox="0 0 24 24" aria-hidden="true" focusable="false"><path d="M19 4H5c-1.1 0-2 .9-2 2v14c0 1.1.9 2 2 2h14c1.1 0 2-.9 2-2V6c0-1.1-.9-2-2-2zM16 2v4M8 2v4M3 10h18" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"/></svg>
+              </a>
+            </div>
+          </div>
+
+          <!-- Hero Right: Featured Video Preview Card & Cloud Emblem -->
+          <div class="hero__showcase anim-entry anim-d5">
+            <div class="hero__aws-cloud-badge">
+              <svg viewBox="0 0 64 40" width="56" height="35" fill="none">
+                <path d="M22 28h22c4.4 0 8-3.6 8-8 0-3.8-2.7-7-6.4-7.8C44.6 7.4 39.8 4 34 4c-5.2 0-9.6 2.8-11.8 7C17.7 11.5 14 15 14 19.5c0 4.7 3.8 8.5 8 8.5z" fill="url(#cloudGlow)"/>
+                <defs>
+                  <linearGradient id="cloudGlow" x1="14" y1="4" x2="52" y2="28" gradientUnits="userSpaceOnUse">
+                    <stop stop-color="#3b82f6"/>
+                    <stop offset="1" stop-color="#1d4ed8"/>
+                  </linearGradient>
+                </defs>
+              </svg>
+              <span class="aws-text">aws</span>
+            </div>
+
+            <div class="video-preview-card video-preview-card--hero card-3d">
+              <div class="video-preview-card__media">
+                <img src="assets/bg-images/community_group.jpg" alt="AWS Student Community Day Group Photo" loading="lazy" width="420" height="260">
+                <a href="https://www.instagram.com/reel/Czk440gS1RF/" target="_blank" rel="noopener noreferrer" class="video-preview-card__play" aria-label="Play previous event highlights video">
+                  <svg class="ico" viewBox="0 0 24 24" fill="currentColor"><path d="M8 5v14l11-7z"/></svg>
+                </a>
+              </div>
+              <div class="video-preview-card__meta">
+                <p class="video-preview-card__title">Event Highlights Glimpse</p>
+                <a href="https://www.instagram.com/reel/Czk440gS1RF/" target="_blank" rel="noopener noreferrer" class="video-preview-card__link">
+                  Watch highlights reel
+                  <svg class="ico ico--sm" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6M15 3h6v6M10 14L21 3"/></svg>
+                </a>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- City Skyline Silhouette Overlay -->
+        <div class="hero__skyline" aria-hidden="true">
+          <svg viewBox="0 0 1200 120" preserveAspectRatio="none" fill="currentColor">
+            <path d="M0 120 L0 95 L12 95 L12 75 L22 75 L22 95 L35 95 L35 65 L48 65 L48 95 L68 95 L68 45 L78 40 L88 45 L88 95 L110 95 L110 80 L130 80 L130 95 L155 95 L155 55 L165 35 L175 55 L175 95 L200 95 L200 70 L220 70 L220 95 L250 95 L250 60 L265 60 L265 95 L290 95 L290 25 L298 15 L306 25 L306 95 L335 95 L335 75 L355 75 L355 95 L380 95 L380 50 L395 50 L395 95 L420 95 L420 65 L435 45 L450 65 L450 95 L480 95 L480 35 L495 35 L495 95 L525 95 L525 70 L545 70 L545 95 L575 95 L575 15 L582 5 L590 15 L590 95 L620 95 L620 60 L635 60 L635 95 L665 95 L665 40 L680 40 L680 95 L710 95 L710 65 L725 50 L740 65 L740 95 L770 95 L770 30 L785 30 L785 95 L815 95 L815 70 L835 70 L835 95 L865 95 L865 45 L875 30 L885 45 L885 95 L915 95 L915 60 L930 60 L930 95 L960 95 L960 75 L980 75 L980 95 L1010 95 L1010 35 L1020 20 L1030 35 L1030 95 L1060 95 L1060 65 L1075 65 L1075 95 L1105 95 L1105 80 L1125 80 L1125 95 L1155 95 L1155 55 L1170 55 L1170 95 L1200 95 Z"/>
+          </svg>
+        </div>
+
+        <!-- Bottom Fluid Curve Divider -->
+        <div class="hero__wave-divider" aria-hidden="true">
+          <svg viewBox="0 0 1440 100" fill="none" xmlns="http://www.w3.org/2000/svg" preserveAspectRatio="none">
+            <path d="M0 40 C320 90, 720 10, 1440 60 L1440 100 L0 100 Z" fill="#ebf3fa"/>
+          </svg>
+        </div>
+      </section>
+
+      <!-- 2 · EVENT FACTS (THE ESSENTIALS) -->
+      <section class="facts" id="facts" aria-label="Event at a glance">
+        <div class="container">
+          <div class="essentials-card">
+            <div class="essentials-card__grid">
+              <div class="essential-item">
+                <div class="essential-item__icon">
+                  <svg class="ico ico--md" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="3" y="4" width="18" height="18" rx="2" ry="2"/><line x1="16" y1="2" x2="16" y2="6"/><line x1="8" y1="2" x2="8" y2="6"/><line x1="3" y1="10" x2="21" y2="10"/></svg>
+                </div>
+                <div class="essential-item__info">
+                  <span class="essential-item__label">DATE</span>
+                  <p class="essential-item__val">Fri, 30 Oct 2026</p>
+                  <p class="essential-item__sub">9:00 AM – 6:00 PM</p>
+                </div>
+              </div>
+
+              <div class="essential-item">
+                <div class="essential-item__icon">
+                  <svg class="ico ico--md" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"/><circle cx="12" cy="10" r="3"/></svg>
+                </div>
+                <div class="essential-item__info">
+                  <span class="essential-item__label">WHERE</span>
+                  <p class="essential-item__val">IGDTUW Auditorium,</p>
+                  <p class="essential-item__sub">Delhi</p>
+                </div>
+              </div>
+
+              <div class="essential-item">
+                <div class="essential-item__icon">
+                  <svg class="ico ico--md" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><line x1="12" y1="1" x2="12" y2="23"/><path d="M17 5H9.5a3.5 3.5 0 0 0 0 7h5a3.5 3.5 0 0 1 0 7H6"/></svg>
+                </div>
+                <div class="essential-item__info">
+                  <span class="essential-item__label">COST</span>
+                  <p class="essential-item__val text-orange font-bold">Free</p>
+                  <p class="essential-item__sub">for all students</p>
+                </div>
+              </div>
+
+              <div class="essential-item">
+                <div class="essential-item__icon">
+                  <svg class="ico ico--md" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M17 21v-2a4 4 0 0 0-4-4H5a4 4 0 0 0-4 4v2"/><circle cx="9" cy="7" r="4"/><path d="M23 21v-2a4 4 0 0 1 0 7.75"/><path d="M16 3.13a4 4 0 0 1 0 7.75"/></svg>
+                </div>
+                <div class="essential-item__info">
+                  <span class="essential-item__label">WHO</span>
+                  <p class="essential-item__val">Any college,</p>
+                  <p class="essential-item__sub">any branch</p>
+                </div>
+              </div>
+            </div>
+
+            <div class="essentials-card__footer">
+              <span class="essentials-card__by-numbers">BY THE NUMBERS</span>
+              <div class="essentials-card__stats">
+                <div class="stat-item"><span class="stat-item__num">250+</span> <span class="stat-item__lbl">Attendees</span></div>
+                <div class="stat-item"><span class="stat-item__num">9</span> <span class="stat-item__lbl">Talks</span></div>
+                <div class="stat-item"><span class="stat-item__num">2</span> <span class="stat-item__lbl">Hands-on activities</span></div>
+                <div class="stat-item"><span class="stat-item__num">10+</span> <span class="stat-item__lbl">Professionals</span></div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- 1.5 · INTERACTIVE COUNTDOWN TIMER SECTION -->
+      <section class="countdown-section" id="countdown" aria-label="Event Countdown">
+        <div class="countdown__bg-arcs" aria-hidden="true"></div>
+        <div class="container countdown-inner">
+          <div class="countdown-header">
+            <p class="countdown-eyebrow">
+              <span class="pulse-dot"></span>
+              COUNTDOWN TO THE BIG DAY
+            </p>
+            <h2 class="countdown-title">The event starts in...</h2>
+            <p class="countdown-subtitle">30 October 2026 • 9:00 AM IST • IGDTUW Auditorium, Delhi</p>
+          </div>
+
+          <div class="countdown-timer" id="live-countdown-timer">
+            <div class="time-block">
+              <span class="time-val" id="count-days">00</span>
+              <span class="time-lbl">Days</span>
+            </div>
+            <div class="time-sep">:</div>
+            <div class="time-block">
+              <span class="time-val" id="count-hours">00</span>
+              <span class="time-lbl">Hours</span>
+            </div>
+            <div class="time-sep">:</div>
+            <div class="time-block">
+              <span class="time-val" id="count-mins">00</span>
+              <span class="time-lbl">Minutes</span>
+            </div>
+            <div class="time-sep">:</div>
+            <div class="time-block">
+              <span class="time-val" id="count-secs">00</span>
+              <span class="time-lbl">Seconds</span>
+            </div>
+          </div>
+
+          <div class="countdown-actions">
+            <a class="btn btn--orange-pill" href="#register">
+              Claim your free spot
+              <svg class="ico ico--sm" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M5 12h14M12 5l7 7-7 7"/></svg>
+            </a>
+          </div>
+        </div>
+      </section>
+
+      <!-- 2.2 · MERGED: PREVIOUS EVENT GLIMPSES & COMMUNITY EXPERIENCE -->
+      <section class="section merged-experience-section" id="community-experience" aria-labelledby="merged-experience-title">
+        <div class="container">
+          <div class="section__head text-center">
+            <p class="eyebrow eyebrow--orange">
+              <span class="eyebrow__dot eyebrow__dot--orange" aria-hidden="true"></span>
+              COMMUNITY EXPERIENCE & HIGHLIGHTS
+            </p>
+            <h2 id="merged-experience-title" class="section__title">Glimpses of Previous Events & Community Experience</h2>
+            <p class="section__lead">
+              Get an insider glimpse of the energy, keynote talks, hands-on cloud workshops, and vibrant student community at IGDTUW.
+            </p>
+          </div>
+
+          <div class="merged-experience__grid">
+            <!-- Left: Video Highlights Card -->
+            <div class="highlights-video-container card-3d">
+              <div class="highlights-video-cover">
+                <img src="assets/bg-images/reel_thumbnail.jpg" alt="AWS Cloud Club Community Team on Stage" loading="lazy">
+                <div class="highlights-video-overlay">
+                  <a href="https://www.instagram.com/reel/Czk440gS1RF/" target="_blank" rel="noopener noreferrer" class="highlights-play-btn" aria-label="Watch Event Highlights Reel on Instagram">
+                    <svg class="ico" viewBox="0 0 24 24" fill="currentColor"><path d="M8 5v14l11-7z"/></svg>
+                  </a>
+                  <div class="highlights-video-badge">Official Highlights Reel</div>
+                  <h3 class="highlights-video-heading">AWS Student Community Day IGDTUW</h3>
+                  <p class="highlights-video-sub">Relive the keynote sessions, networking, and hands-on cloud learning.</p>
+                  <a href="https://www.instagram.com/reel/Czk440gS1RF/" target="_blank" rel="noopener noreferrer" class="btn btn--orange-pill btn--sm">
+                    Watch Reel on Instagram
+                    <svg class="ico ico--sm" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6M15 3h6v6M10 14L21 3"/></svg>
+                  </a>
+                </div>
+              </div>
+            </div>
+
+            <!-- Right: Community Experience Cards -->
+            <div class="experience-features__col">
+              <div class="experience-feature-card card-3d">
+                <div class="experience-feature__icon">
+                  <svg class="ico ico--md" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M17 21v-2a4 4 0 0 0-4-4H5a4 4 0 0 0-4 4v2"/><circle cx="9" cy="7" r="4"/><path d="M23 21v-2a4 4 0 0 1 0 7.75"/><path d="M16 3.13a4 4 0 0 1 0 7.75"/></svg>
+                </div>
+                <div class="experience-feature__body">
+                  <h4>Keynotes & Tech Panels</h4>
+                  <p>Learn directly from AWS Heroes, cloud architects, and industry leaders shaping the cloud ecosystem.</p>
+                </div>
+              </div>
+
+              <div class="experience-feature-card card-3d">
+                <div class="experience-feature__icon">
+                  <svg class="ico ico--md" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M14.7 6.3a1 1 0 0 0 0 1.4l1.6 1.6a1 1 0 0 0 1.4 0l3.77-3.77a6 6 0 0 1-7.94 7.94l-6.91 6.91a2.12 2.12 0 0 1-3-3l6.91-6.91a6 6 0 0 1 7.94-7.94l-3.76 3.76z"/></svg>
+                </div>
+                <div class="experience-feature__body">
+                  <h4>Hands-on Workshops</h4>
+                  <p>Build scalable cloud architectures, deploy live serverless projects, and practice cloud skills.</p>
+                </div>
+              </div>
+
+              <div class="experience-feature-card card-3d">
+                <div class="experience-feature__icon">
+                  <svg class="ico ico--md" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M20.84 4.61a5.5 5.5 0 0 0-7.78 0L12 5.67l-1.06-1.06a5.5 5.5 0 0 0-7.78 7.78l1.06 1.06L12 21.23l8.72-8.72 1.06-1.06a5.5 5.5 0 0 0 0-7.78z"/></svg>
+                </div>
+                <div class="experience-feature__body">
+                  <h4>Vibrant Community Vibe</h4>
+                  <p>Network with fellow cloud enthusiasts, win exclusive AWS swag, and connect with mentors.</p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+
+
+      <!-- 3 · WHO IT'S FOR + WHAT YOU'LL GAIN -->
+      <section class="section overview" id="overview" aria-labelledby="overview-title">
+        <div class="container">
+          <div class="section__head">
+            <p class="eyebrow">Is this event for you?</p>
+            <h2 id="overview-title" class="section__title">
+              Built for every student curious about cloud
+            </h2>
+            <p class="section__lead">
+              AWS Student Community Day brings practitioners from AWS and the
+              wider cloud community to campus for one day. No AWS experience
+              needed — sessions are tagged by level so you can pick your own
+              starting point.
+            </p>
+          </div>
+
+          <ul class="reassure">
+            <li>
+              <svg class="ico ico--sm" viewBox="0 0 24 24" aria-hidden="true" focusable="false"><path d="m4 12.5 5 5L20 6.5" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"/></svg>
+              No AWS experience needed
+            </li>
+            <li>
+              <svg class="ico ico--sm" viewBox="0 0 24 24" aria-hidden="true" focusable="false"><path d="m4 12.5 5 5L20 6.5" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"/></svg>
+              Open to any college, branch or year
+            </li>
+            <li>
+              <svg class="ico ico--sm" viewBox="0 0 24 24" aria-hidden="true" focusable="false"><path d="m4 12.5 5 5L20 6.5" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"/></svg>
+              Free to attend
+            </li>
+          </ul>
+
+          <ul class="overview__grid" id="audience-grid"></ul>
+
+          <div class="outcomes" id="outcomes-panel"></div>
+
+          <div class="perks">
+            <h3 class="perks__title">Also on the day</h3>
+            <ul class="perks__list perks__list--chips">
+              <li class="perk-chip">
+                <svg class="ico ico--sm" viewBox="0 0 24 24" aria-hidden="true" focusable="false"><path d="M12 2 4 5v6c0 5.25 3.4 10 8 11 4.6-1 8-5.75 8-11V5z" fill="none" stroke="currentColor" stroke-width="2" stroke-linejoin="round"/><path d="m9 12 2 2 4-4" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>
+                Networking with professionals &amp; peers
+              </li>
+              <li class="perk-chip">
+                <svg class="ico ico--sm" viewBox="0 0 24 24" aria-hidden="true" focusable="false"><circle cx="12" cy="12" r="9" fill="none" stroke="currentColor" stroke-width="2"/><path d="M12 7v5l3 3" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"/></svg>
+                2 hands-on activities
+              </li>
+              <li class="perk-chip">
+                <svg class="ico ico--sm" viewBox="0 0 24 24" aria-hidden="true" focusable="false"><path d="M4 19V5a2 2 0 0 1 2-2h12a2 2 0 0 1 2 2v16l-4-2-4 2-4-2z" fill="none" stroke="currentColor" stroke-width="2" stroke-linejoin="round"/></svg>
+                Community goodies, lunch &amp; snacks
+              </li>
+            </ul>
+          </div>
+        </div>
+      </section>
+
+
+
+      <!-- 4 · SCHEDULE -->
+      <section class="section schedule" id="schedule" aria-labelledby="schedule-title">
+        <div class="container">
+          <div class="section__head">
+            <p class="eyebrow">Agenda</p>
+            <h2 id="schedule-title" class="section__title">Plan your day</h2>
+            <p class="section__lead">
+              Nine talks across cloud, AI, security and careers. Search, filter
+              by level, and shortlist the sessions you want to catch.
+            </p>
+          </div>
+
+          <div class="schedule__tools" role="group" aria-label="Schedule tools">
+            <label class="schedule__search">
+              <span class="sr-only">Search sessions</span>
+              <svg class="ico ico--sm" viewBox="0 0 24 24" aria-hidden="true" focusable="false"><circle cx="11" cy="11" r="7" fill="none" stroke="currentColor" stroke-width="2"/><path d="m20 20-4-4" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"/></svg>
+              <input
+                id="schedule-search"
+                type="search"
+                placeholder="Search by topic or speaker"
+                autocomplete="off"
+              />
+            </label>
+
+            <div class="schedule__filters" id="level-filters" role="group" aria-label="Filter by skill level"></div>
+
+            <button class="btn btn--soft btn--sm" id="my-schedule-btn" type="button">
+              My schedule
+              <span class="badge badge--count" id="my-schedule-count" aria-hidden="true">0</span>
+            </button>
+          </div>
+
+          <p class="schedule__note" id="schedule-note"></p>
+
+          <ol class="timeline" id="timeline-list" aria-live="polite"><!-- sessions --></ol>
+
+          <p class="schedule__empty" id="schedule-empty" hidden>
+            No sessions match your search. Try clearing the filters.
+            <button class="btn btn--link" id="schedule-clear" type="button">Clear filters</button>
+          </p>
+        </div>
+      </section>
+
+      <!-- 5 · SPEAKERS -->
+      <section class="section speakers" id="speakers" aria-labelledby="speakers-title">
+        <div class="container">
+          <div class="section__head">
+            <p class="eyebrow">Who's speaking</p>
+            <h2 id="speakers-title" class="section__title">Speakers &amp; sessions</h2>
+            <p class="section__lead">
+              Practitioners and mentors from AWS and the cloud community. Each
+              card links to the speaker's session in the schedule.
+            </p>
+          </div>
+          <ul class="speakers__grid" id="speakers-grid"><!-- rendered from SPEAKERS --></ul>
+        </div>
+      </section>
+
+      <!-- 6 · REGISTRATION -->
+      <section class="section register" id="register" aria-labelledby="register-title">
+        <div class="register__moving-bg" aria-hidden="true"></div>
+        <div class="container register__inner">
+          <div class="register__intro">
+            <p class="eyebrow eyebrow--light">
+              <span class="eyebrow__dot" aria-hidden="true"></span>
+              Free registration
+            </p>
+            <h2 id="register-title" class="section__title section__title--light">
+              Reserve your spot
+            </h2>
+            <p class="register__lede">
+              Registration is free and handled on Konfhub. You'll leave this
+              site to book, then get a confirmation by email — here's what to
+              expect next.
+            </p>
+          </div>
+
+          <aside class="register__card" aria-label="Registration actions">
+            <div class="register__card-head">
+              <p class="register__price">
+                <span class="register__amount">₹0</span>
+                <span class="register__free">Free for students</span>
+              </p>
+            </div>
+            <ul class="register__summary">
+              <li><span>Date</span><strong>30 October 2026</strong></li>
+              <li><span>Time</span><strong>9:00 AM – 6:00 PM</strong></li>
+              <li><span>Venue</span><strong>IGDTUW Auditorium, Delhi</strong></li>
+            </ul>
+            <a
+              class="btn btn--accent btn--lg btn--block"
+              id="konfhub-link"
+              href="https://konfhub.com/awsstudentcommunityigdtuw"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              Get your free ticket
+              <svg class="ico ico--sm" viewBox="0 0 24 24" aria-hidden="true" focusable="false"><path d="M7 17 17 7M9 7h8v8" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>
+            </a>
+            <p class="register__ext" id="register-ext"></p>
+
+            <div class="register__cal" id="calendar-actions"></div>
+
+            <p class="register__help">
+              Questions? <a href="#faq">Check the FAQ</a> or
+              <a href="https://www.instagram.com/awscloudclubigdtuw" target="_blank" rel="noopener noreferrer">message us on Instagram</a>.
+            </p>
+          </aside>
+
+          <div class="register__steps">
+            <h3 class="register__steps-title">What happens next</h3>
+            <ol class="steps">
+              <li>
+                <span class="steps__num" aria-hidden="true">1</span>
+                <p><strong>Get your free ticket</strong> on our Konfhub page — takes about a minute.</p>
+              </li>
+              <li>
+                <span class="steps__num" aria-hidden="true">2</span>
+                <p><strong>Receive confirmation</strong> — Konfhub emails you a confirmation with your ticket details.</p>
+              </li>
+              <li>
+                <span class="steps__num" aria-hidden="true">3</span>
+                <p><strong>Add 3 Feb to your calendar</strong> so you don't miss the morning.</p>
+              </li>
+              <li>
+                <span class="steps__num" aria-hidden="true">4</span>
+                <p><strong>Show your ticket at check-in</strong> at the IGDTUW Auditorium from 9:00 AM.</p>
+              </li>
+            </ol>
+          </div>
+        </div>
+      </section>
+
+      <!-- 7 · VENUE + EVENT DAY -->
+      <section class="section venue" id="venue" aria-labelledby="venue-title">
+        <div class="container">
+          <div class="section__head">
+            <p class="eyebrow">Logistics</p>
+            <h2 id="venue-title" class="section__title">Venue &amp; event day</h2>
+            <p class="section__lead">
+              Everything you need for the day — where it is, when to arrive and
+              what to bring.
+            </p>
+          </div>
+
+          <div class="venue__grid">
+            <ul class="venue__list">
+              <li class="venue__item">
+                <svg class="ico ico--md" viewBox="0 0 24 24" aria-hidden="true" focusable="false"><path d="M12 21s-7-5.5-7-11a7 7 0 0 1 14 0c0 5.5-7 11-7 11z" fill="none" stroke="currentColor" stroke-width="2"/><circle cx="12" cy="10" r="2.5" fill="none" stroke="currentColor" stroke-width="2"/></svg>
+                <div class="venue__body">
+                  <p class="venue__label">Where</p>
+                  <p class="venue__value">IGDTUW Auditorium</p>
+                  <p class="venue__text">Indira Gandhi Delhi Technical University for Women, Kashmere Gate, Delhi</p>
+                </div>
+              </li>
+              <li class="venue__item">
+                <svg class="ico ico--md" viewBox="0 0 24 24" aria-hidden="true" focusable="false"><circle cx="12" cy="12" r="9" fill="none" stroke="currentColor" stroke-width="2"/><path d="M12 7v5l3 3" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"/></svg>
+                <div class="venue__body">
+                  <p class="venue__label">When to arrive</p>
+                  <p class="venue__value">From 9:00 AM</p>
+                  <p class="venue__text">Check-in and seating at the Auditorium. Exact session timings will be shared before the event.</p>
+                </div>
+              </li>
+              <li class="venue__item">
+                <svg class="ico ico--md" viewBox="0 0 24 24" aria-hidden="true" focusable="false"><path d="M12 3 4 7v5c0 5 3.5 8 8 9 4.5-1 8-4 8-9V7z" fill="none" stroke="currentColor" stroke-width="2" stroke-linejoin="round"/></svg>
+                <div class="venue__body">
+                  <p class="venue__label">What to bring</p>
+                  <ul class="venue__check">
+                    <li>Your student ID</li>
+                    <li>The confirmation email / ticket on your phone</li>
+                    <li>A charged phone</li>
+                  </ul>
+                </div>
+              </li>
+              <li class="venue__item">
+                <svg class="ico ico--md" viewBox="0 0 24 24" aria-hidden="true" focusable="false"><path d="M20 21v-2a4 4 0 0 0-4-4H8a4 4 0 0 0-4 4v2M12 11a4 4 0 1 0 0-8 4 4 0 0 0 0 8z" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"/></svg>
+                <div class="venue__body">
+                  <p class="venue__label">Need help?</p>
+                  <p class="venue__value">Ask the club team</p>
+                  <p class="venue__text">The AWS Cloud Club team will be on site all day — reach out before the event on Instagram or X.</p>
+                </div>
+              </li>
+            </ul>
+
+            <div class="venue__map">
+              <iframe
+                title="Map showing IGDTUW Auditorium, Delhi"
+                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3500.8055370309853!2d77.22942760932312!3d28.665540782482477!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x390cfd0682f8aa2b%3A0x84c5888a85caa2bd!2sIGDTUW%20Auditorium!5e0!3m2!1sen!2sin!4v1703256687127!5m2!1sen!2sin"
+                loading="lazy"
+                referrerpolicy="no-referrer-when-downgrade"
+                allowfullscreen
+              ></iframe>
+              <a
+                class="venue__maps-link"
+                href="https://www.google.com/maps/search/?api=1&query=IGDTUW+Auditorium+Delhi"
+                target="_blank"
+                rel="noopener noreferrer"
+              >
+                Open in Google Maps
+                <svg class="ico ico--xs" viewBox="0 0 24 24" aria-hidden="true" focusable="false"><path d="M7 17 17 7M9 7h8v8" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>
+              </a>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- 8 · SPONSORS -->
+      <section class="sponsors" id="sponsors" aria-label="Supported by">
+        <div class="container">
+          <p class="sponsors__label">Supported by</p>
+          <ul class="sponsors__row">
+            <li class="sponsor">
+              <img src="assets/Sponsors/aws-logo.png" alt="Amazon Web Services" loading="lazy" width="280" height="80" />
+              <span class="sr-only">Title sponsor</span>
+            </li>
+            <li class="sponsor">
+              <img src="assets/Sponsors/konfhub-logo-purple.png" alt="Konfhub" loading="lazy" width="280" height="80" />
+              <span class="sr-only">Ticketing partner</span>
+            </li>
+          </ul>
+        </div>
+      </section>
+
+      <!-- 9 · TEAM -->
+      <section class="section team" id="team" aria-labelledby="team-title">
+        <div class="container">
+          <div class="section__head">
+            <p class="eyebrow">
+              <span class="eyebrow__dot" aria-hidden="true"></span>
+              Behind the event
+            </p>
+            <h2 id="team-title" class="section__title">Meet the team</h2>
+            <p class="section__lead">
+              AWS Student Community Day is organized and run by the dedicated student core team of AWS Cloud Club, IGDTUW.
+            </p>
+          </div>
+          <ul class="team__grid" id="team-grid"><!-- rendered from TEAM --></ul>
+        </div>
+      </section>
+
+      <!-- 10 · FAQ -->
+      <section class="section faq" id="faq" aria-labelledby="faq-title">
+        <div class="container container--narrow">
+          <div class="section__head">
+            <p class="eyebrow">Before you ask</p>
+            <h2 id="faq-title" class="section__title">Questions, answered</h2>
+          </div>
+          <div class="accordion" id="faq-accordion"><!-- rendered from FAQS --></div>
+        </div>
+      </section>
+    </main>
+
+    <!-- 11 · FOOTER / WHAT'S NEXT -->
+    <footer class="footer" id="next">
+      <div class="container">
+        <div class="footer__grid">
+          <div class="footer__block">
+            <h2 class="footer__heading">What's next</h2>
+            <p class="footer__lead">
+              Community Day is one day — the Cloud Club runs all year. Follow
+              us for workshops, recruitments and cloud news from IGDTUW.
+            </p>
+          </div>
+          <div class="footer__block">
+            <h2 class="footer__heading">Follow the club</h2>
+            <ul class="footer__links">
+              <li>
+                <a href="https://www.instagram.com/awscloudclubigdtuw" target="_blank" rel="noopener noreferrer">
+                  <svg class="ico ico--sm" viewBox="0 0 24 24" aria-hidden="true" focusable="false"><rect x="3" y="3" width="18" height="18" rx="5" fill="none" stroke="currentColor" stroke-width="2"/><circle cx="12" cy="12" r="4" fill="none" stroke="currentColor" stroke-width="2"/><circle cx="17.2" cy="6.8" r="1.2" fill="currentColor"/></svg>
+                  Instagram
+                </a>
+              </li>
+              <li>
+                <a href="https://www.linkedin.com/company/aws-cloud-club-igdtuw/" target="_blank" rel="noopener noreferrer">
+                  <svg class="ico ico--sm" viewBox="0 0 24 24" aria-hidden="true" focusable="false"><rect x="3" y="3" width="18" height="18" rx="3" fill="none" stroke="currentColor" stroke-width="2"/><path d="M7.5 10.5V17M7.5 7v.01M11.5 17v-4a2.5 2.5 0 0 1 5 0v4" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"/></svg>
+                  LinkedIn
+                </a>
+              </li>
+              <li>
+                <a href="https://x.com/AWSClubIGDTUW?t=Mv5rpAyBkvI8AGfDC6ayoQ&s=09" target="_blank" rel="noopener noreferrer">
+                  <svg class="ico ico--sm" viewBox="0 0 24 24" aria-hidden="true" focusable="false"><path d="M4 4l7.2 9.3L4.4 20h2.2l5.4-5.3L16.4 20H20l-7.5-9.7L18.9 4h-2.2l-4.9 4.8L8 4z" fill="currentColor"/></svg>
+                  X (Twitter)
+                </a>
+              </li>
+              <li>
+                <a href="https://aceta-minophen.github.io/aws-cloud-club-igdtuw/" target="_blank" rel="noopener noreferrer">
+                  <svg class="ico ico--sm" viewBox="0 0 24 24" aria-hidden="true" focusable="false"><circle cx="12" cy="12" r="9" fill="none" stroke="currentColor" stroke-width="2"/><path d="M3 12h18M12 3c2.5 2.3 3.8 5.5 3.8 9S14.5 18.7 12 21c-2.5-2.3-3.8-5.5-3.8-9S9.5 5.3 12 3z" fill="none" stroke="currentColor" stroke-width="2"/></svg>
+                  Club website
+                </a>
+              </li>
+            </ul>
+          </div>
+        </div>
+
+        <div class="footer__bar">
+          <p>© 2024 AWS Cloud Club, IGDTUW. All rights reserved.</p>
+          <p class="footer__credit">
+            Designed &amp; developed by
+            <a href="https://www.linkedin.com/in/payalnarwal/" target="_blank" rel="noopener noreferrer">Payal Narwal</a>
+          </p>
+        </div>
+      </div>
+    </footer>
+
+    <!-- TEAM DIALOG -->
+    <div class="dialog-backdrop" id="team-dialog" role="dialog" aria-modal="true" aria-labelledby="team-dialog-title" hidden>
+      <div class="dialog">
+        <div class="dialog__head">
+          <h2 id="team-dialog-title">The AWS Cloud Club team, IGDTUW</h2>
+          <button class="dialog__close" id="team-close" type="button" aria-label="Close team list">
+            <svg class="ico" viewBox="0 0 24 24" aria-hidden="true" focusable="false"><path d="m6 6 12 12M18 6 6 18" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"/></svg>
+          </button>
+        </div>
+        <ul class="team__grid" id="team-grid"><!-- rendered from TEAM --></ul>
+      </div>
+    </div>
+
+    <!-- MY SCHEDULE PANEL -->
+    <aside class="schedule-panel" id="schedule-panel" aria-label="My schedule" hidden>
+      <div class="schedule-panel__head">
+        <h2 id="schedule-panel-title">My schedule</h2>
+        <button class="dialog__close" id="schedule-panel-close" type="button" aria-label="Close my schedule">
+          <svg class="ico" viewBox="0 0 24 24" aria-hidden="true" focusable="false"><path d="m6 6 12 12M18 6 6 18" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"/></svg>
+        </button>
+      </div>
+      <div class="schedule-panel__content" id="schedule-panel-list"></div>
+    </aside>
+
+    <script src="data.js"></script>
+    <script src="cursor-ring-field.js"></script>
+    <script src="app.js"></script>
+  </body>
+</html>
